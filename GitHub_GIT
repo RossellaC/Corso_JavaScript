@@ -8,4 +8,49 @@
 2--posizionarsi in Github page e definire la source e scegliere master branch
 3-- la pagina si automaticamente e genererà un link
 4-- cliccare sul link per vedere la pagina html del nostro sito
-(https://lacerba.io/corso-creazione-landing-page/16-utilizzare-l-host-di-github-per-andare-online) 
+(https://lacerba.io/corso-creazione-landing-page/16-utilizzare-l-host-di-github-per-andare-online)
+
+###  Clonare il repositori sul pc in modo da attivare git ###
+1-- cliccare su un file del progetto e in alto a destra del file apparità un logo(desktop)
+2--cliccare sul logo e aprire github da desktop
+3--crearà un percoro cha associa github al progetto --conferamare--
+4-- andare su atom e git sarà collegato al repository appena craeto
+
+Creazione di un repository git ---> posizionarsi nella cartella del progetto  ### git flow init
+			   scegliere il ramo in cui posizionarsi e premere invio (master)
+			   scegliere il ramo in cui poi verrà rilasciato e premere invio (develop)
+			   confermare tutti gli altri rami
+
+Controllo stato di git (file ancora da caricare in rosso) e su quale ramo ci proviamo --> git status
+Aggiungere tutto su git  ---> git add -A (-A sta per tutto quello che c'è in rosso)
+Escludere i file da git --> (programma ) atom .gitignore (inserire nel file appena aperto attraverso il comando
+			precedente tutte le cartelle /o file che vogliamo escludere
+			*.estensione per escudere tutti i file con quella estensione
+
+Per effettuare le modifiche aggiunte nel file che bisogna ignorare --> git add .gitignore
+Salvare  lo stato del progetto (commit) --> git commit -a -m "inserire un commento "(obbligatorio)
+
+Visualizzare in modo grafico il lavoro di git in una dashbord --> gitk  -->nel path dove è stato creato il file .git
+
+
+#########utilizzo di git da schermata su atom############
+ogni volta che viene apportata una modifica ci risultano i file nella schermata accanto
+1--> premere la freccia(alto a destra sopra i file da caricare)
+2-->scrivere il messaggio
+3-->commit
+
+####eliminare del repository git alcuni file###
+basta eliminare i file dalla cartella dal progetto
+
+####creazione del ramo di sviluppo separato#
+attraverso lo strumento git flow
+strutturando le aggiunte e le modifiche al progetto tramite dei concetti
+1-->se la modifica è un bath fix (correzione) deve essere contenuta in un ramo
+dedicato al bathfix
+2-->se la modifica è relativa all'aggiunta di una nuova funzionalità o alla modifica relativa al comportamento del progetto
+deve essere contenuta in un contenitore denominato feature(caratteristiche)
+
+####creazione di una nuova feature###
+-->git flow feature start ristrutturazione_template
+quando avremo finito lanceremo il comando ---> git flow feature finish ristrutturazione_template
+per chiudere il ramo
