@@ -14,7 +14,7 @@
 1-- cliccare su un file del progetto e in alto a destra del file apparità un logo(desktop)
 2--cliccare sul logo e aprire github da desktop
 3--crearà un percoro cha associa github al progetto --conferamare--
-4-- andare su atom e git sarà collegato al repository appena craeto
+4-- andare su atom e git sarà collegato al repository appena creato
 
 Creazione di un repository git ---> posizionarsi nella cartella del progetto  ### git flow init
 			   scegliere il ramo in cui posizionarsi e premere invio (master)
@@ -54,3 +54,6 @@ deve essere contenuta in un contenitore denominato feature(caratteristiche)
 -->git flow feature start ristrutturazione_template
 quando avremo finito lanceremo il comando ---> git flow feature finish ristrutturazione_template
 per chiudere il ramo
+
+#### Da GIT a GITHUB ####
+1--affinchè il commit effettuato su git sia visibile su gitHub bisogna 
