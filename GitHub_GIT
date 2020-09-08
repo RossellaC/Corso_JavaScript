@@ -1,0 +1,11 @@
+#########  CARICARE UN PROGETTO ESISTENTE SU GITHUB  ####
+1--Effettuare l'accesso su GitHub e creare una repository
+2--Cliccare su uploading an existing file (sotto il link generato)
+3--andare sul progetto e copiare tutti i file
+
+#####  RENDERE ACCESSIBILE  LA PAGINA HTML  #######
+1-- Impostazioni (settings)
+2--posizionarsi in Github page e definire la source e scegliere master branch
+3-- la pagina si automaticamente e genererà un link
+4-- cliccare sul link per vedere la pagina html del nostro sito
+(https://lacerba.io/corso-creazione-landing-page/16-utilizzare-l-host-di-github-per-andare-online) 
