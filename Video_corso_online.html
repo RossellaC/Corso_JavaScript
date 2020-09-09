@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title> 
-  </head>
-  <body>
 
-<script type="text/javascript">
+<head>
+</head>
 
-</script>
+<body>
+  <h1>TITOLO h1</h1>
+  <button type="btn" onclick="cambiaColore()">CLICCAMI</button>
+  <p id="display" style="width:500px;height:300px;border:1px solid black">Primo Paragrafo
+  </p>
+  <script>
+  // primo modo
+    alert("Ciao");
+    // secondo modo --sostituzione del tag id="display" con il valore sottostante
+    document.getElementById('display').innerHTML='Ciao  da document';
+    //  terzo modo quello più utilizzato
+    console.log("ciao da log");
+    //quarto modo --->solo in fase di sperimentazione in quanto ricarica nuovamente tutta la pag
+    document.write('Ciao da document Write')
 
-  </body>
+  </script>
+  <!-- inserimento del codice javascript nei tag <script></script> -->
+  <!--  visto che è nella stessa directory basta scrivere il nome del file -->
+  <script src="file_javascript.js"></script>
+  <!-- per inserire una librerie jquery copiare il link-->
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+
 </html>
