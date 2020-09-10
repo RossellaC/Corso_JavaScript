@@ -1,0 +1,17 @@
+#################CONSIGLI DI PROGRAMMAZIONE ###########
+1--> INSERIRE I LINK E LE PAGINE ESTERNE DI JAVASCRIPT ALLA FINE DEL TAG BODY POICHE'
+     DAL MOMENTO CHE IL FILE HTML VIENE LETTO DALL'ALTO VERSO IL BASSO E NEL TAG HEAD VA A LEGGERE LE
+     LIBRERIE IL CARICAMENTO DELLA PAG DIVENTA LENTO
+
+2--> per visualizzare l'output si consiglia di utilizzare console.log altrimenti in caso di loop
+    dovremmo riavviare il pc
+
+3--> nome variabile :minMaiuscola (nome descrittivo)
+3--> nome funzione:  function nomeFunzione(){blocco di codice}  nomefunzione  (azione della funzione)
+
+4-->  ' ;  ' non abbligatori ma consigliabili alla fine di una variabile
+
+IN JAVASCRIPT TUTTO CIO' CHE NON SONO VALORI PRIMITIVI SONO OGGETTI
+
+5--> E' buona norma utilizzare l'operatore di identicità (===) poichè se si comapre un numero con una stringa
+    es 5 == '5' ritorna true quindi può creare confusione

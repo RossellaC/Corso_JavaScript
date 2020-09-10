@@ -1,0 +1,29 @@
+Javascript è noto per rendere le pagine dinamiche e farle interaggire con l'utente
+guidato dall'evento (event driven --> fare un qualcosa quando si fa altro)
+é un linguaggio interpretato,infatti basta un browser non serve un compilatore.
+E' tipizzato cioè non bisogna specializzare che tipo di variabile è.
+Client_side con (NOde.js)e anche per il front-end.
+
+var --> dichiarazione variabile
+
+###### OPERATORI DI COMPARAZIONE ####
+ === operatore di identicità
+ ==  operatore di uguaglianza
+
+ === vs == l'operatore di uguaglianza non riconosce il tipo
+            5 == '5' return true
+            5 === '5' return false;
+
+NEGARE L'identicità (===)  --> !==
+
+OERATORE TERNARIO ' ? ' --> L'Ooperatore ternario è un operatore di comparazione
+          composto da tre parti --> prima parte si mette  una comparazione (5>10)
+                                --> parte centrale ' ? '
+                                --> seconda parte : se la prima parte è vera assegnare il valore altrimenti assegnare l'altro valore
+                                es --> 5 >10 ? 'vero': 'falso' (quindi se 5 >10 assegnare vero altrimenti falso)
+
+
+TYPE operatore (operatore di tipo  ) sono utilizzati per vedere che tipo di variabile abbiamo
+typeof  --> var numero =2;  console.log(typeof numero) --> return number
+instanceof --> serve per vedere se un oggetto deriva da un altro
+           var numero=[]; console.log(numero instanceof Array) --> return vero
