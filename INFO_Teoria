@@ -43,3 +43,12 @@ Const --> si utilizza se la variabile non deve essere cambiata di valore
 QUANDO NON è ASSEGNATO NESSUN VAROLE ALLA VARIABILE JAVASCRIPT ASSEGNA DUE VALORI
 --> undefined (indefinito) vuol dire che non c'è nessu valore aspettato per quella VARIABILE
 --> null (nullo)  quando si aspetta un oggetto ma non lo trova
+
+NELL'AMBITO DELLO SCOPE (ambito di visibilità di una variabile)
+in questo ambito const e let si comportano allo stesso modo
+
+################# let vs var ############
+var-->per creare un'ambiente interno devo creare una funzione
+let-->er creare un'ambiente interno devo creare un blocco if ... tutto ciò che può essere racchiuso tra parentesi
+
+tutti gli altri linguaggi utilizzano il block scope e javascript prima ES6 function scope  per tale motivo con ES6 è nata la variabile let
