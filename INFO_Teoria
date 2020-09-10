@@ -27,3 +27,19 @@ TYPE operatore (operatore di tipo  ) sono utilizzati per vedere che tipo di vari
 typeof  --> var numero =2;  console.log(typeof numero) --> return number
 instanceof --> serve per vedere se un oggetto deriva da un altro
            var numero=[]; console.log(numero instanceof Array) --> return vero
+
+
+#######  DICHIARAZIONE VARIABILI  #### ( parole chiavi per dichiarare una variabile  var -- let -- const )
+
+prima di ECMAScript6 (o ES6) è la specifica tecnica di un linguaggio di scripting, standardizzata e mantenuta da ECMA International
+veniva utilizzata solo var
+
+Const --> si utilizza se la variabile non deve essere cambiata di valore
+      se la variabile è un oggetto o array posso cambiare /monipolare le sue proprietà
+      const obj={};
+      obj.x=2;
+      obj.y='6';
+
+QUANDO NON è ASSEGNATO NESSUN VAROLE ALLA VARIABILE JAVASCRIPT ASSEGNA DUE VALORI
+--> undefined (indefinito) vuol dire che non c'è nessu valore aspettato per quella VARIABILE
+--> null (nullo)  quando si aspetta un oggetto ma non lo trova
