@@ -17,4 +17,8 @@ IN JAVASCRIPT TUTTO CIO' CHE NON SONO VALORI PRIMITIVI SONO OGGETTI
     es 5 == '5' ritorna true quindi può creare confusione
 
 6--> buona norma dare alle variabili Const il nome il lettera maiuscola in modo che a prima vista si può
-    capire che la variabile è una costante
+    capire che si tratta di una Costante
+
+7-->INVECE DI CONCATENARE UNA STRINGA CON + --> ` stringa ${nomevariabile}`
+    'ciao' + 'mondo '+ 'hello'
+     si utilizza il ` ` (backtick  )  --> `ciao ${mondo} `

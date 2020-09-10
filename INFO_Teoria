@@ -52,3 +52,29 @@ var-->per creare un'ambiente interno devo creare una funzione
 let-->er creare un'ambiente interno devo creare un blocco if ... tutto ciò che può essere racchiuso tra parentesi
 
 tutti gli altri linguaggi utilizzano il block scope e javascript prima ES6 function scope  per tale motivo con ES6 è nata la variabile let
+
+############## STRINGHE ########
+3 modi di dichiarare una stringa
+' ' --- " " ---  ` ` (backtick  )
+
+se devo tornare a capo poichè la stringa da scrivere è lunga devo mettere a fine riga uno  \
+altrimenti mi risulta come errore
+
+ es --> document.getElementById('display').innerHTML='Ciao  da document \
+dkjfhskdfhsdkffkha';
+
+SE utilizzo il BACKTIC non c'è bisogno di utilizzare \ ma posso scrivere direttamente nella riga successiva
+
+
+######## INSERIMENTO TAG HTML IN UNA STRINGA ########
+es -->let stringa1='questa <b> stringa  </b> <br> ha html </br>'
+    posso inserire qualsiasi tipo di tag
+
+######UTILIZZO APICI IN UNA STRINGA ######
+ es --> let string2  = 'E' arrivata l'estate  (javascrip non sa che ' è di E' ma pensa sia
+        un ' di chiusura quindi basta inserire \') sessa cosa con " " o con \
+        questa cosa non succede con  ` `
+
+############### CONVERSIONE DA NUMERO A STRINGA ###########
+1 --> let num =6; ------ num =String(num);
+2--> let num =6; ------ num= ''+num;
