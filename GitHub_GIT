@@ -59,4 +59,4 @@ per chiudere il ramo
 1--affinchè il commit effettuato su git sia visibile su gitHub bisogna effettuare il PUSH
 2-- basta andare in fondo alla pagina di atom e sarà visibile la parola PUSH (essa sarà visibile solo se ci stanno nuovi commit)
 3-- cliccare su push e mettere le credenziali del proprio GitHub
-4-- aggiornare la pagina e le modifiche sono state apportate 
+4-- aggiornare la pagina e le modifiche sono state apportate

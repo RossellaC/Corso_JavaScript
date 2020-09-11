@@ -78,3 +78,19 @@ es -->let stringa1='questa <b> stringa  </b> <br> ha html </br>'
 ############### CONVERSIONE DA NUMERO A STRINGA ###########
 1 --> let num =6; ------ num =String(num);
 2--> let num =6; ------ num= ''+num;
+3--> let num =6; ------ num.toString();
+
+
+############## NUMERI ###########
+1--> nessuna distinzionte fra int e float poichè li tratta come se fossero tutti float
+2-->da string a num
+    es-> let stringa="9";
+          console.log(parseInt(stringa))  return interno
+          console.log(parleFloat(stringa)) return float
+          console.log(Number(stringa))
+          console.log(+stringa)return  intero
+3--> la somma o la manipolazione di numeri float non è corretta in javascrip
+      infatti se si fa 0,1+0,2 =0,3000000004
+      per ovviare a questa bug basta moltiplicare ogni numero per dieci e poi dividere la somma diviso dieci
+4--> SOLO ALCUNI NUM DOPOP LA VIRGOLA
+    --> num.toFixed(numDopoLaVirgola)
