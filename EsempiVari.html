@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>TITOLO </h1>
+
+    <p id="display"></p>
+    <script >
+      // sostituire lettere  ( in questa caso o)in un testo con il ciclo while
+      let testo=`Il testo (dal latino textus, "tessuto", "trama"), è un insieme di parole correlate fra loro per formare un'unità logico-concettuale,
+                rispettando la sintassi e la semantica della lingua utilizzata, ovvero la sua grammatica e il suo lessico.Il termine "testo", inoltre,
+                può indicare un insieme di segni, quali gesti, espressioni facciali o altre componenti della comunicazione non verbale, o,
+                in generale, il messaggio di qualsiasi mezzo di comunicazione. `
+      while(testo.indexOf('o')>=0){
+        // Quando trova il primo o lo sostituisce con w
+        // CICLANdo mi sostituisce tutto
+        testo= testo.replace('o','A');
+      }
+      document.getElementById('display').innerHTML=testo;
+    </script>
+  </body>
+</html>
