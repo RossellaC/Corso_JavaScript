@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+/* {# creare un nuovo oggetto gatto : razza, colore, nome, azione=output
+output :ho un nuovo gatto di nome PIPPO, è un gatto grigio di razza siemese */
+let gatto={
+  razza:'siemese',
+  colore:'grigio',
+  nome:'pippo',
+  output:function(){
+    document.write(`ho un gatto di nome ${this.nome.toUpperCase()},
+    è un gatto ${this.colore} di razza ${this.razza}`);
+
+  }
+
+};
+
+gatto.output();
+let nuovo=[1,2,3,4];
+document.write("<br> </br>");
+nuovo.forEach(function(elem,index){
+
+document.write("elemento:"+elem+ "   indice:"+index);
+});
+</script>
+  </body>
+</html>

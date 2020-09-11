@@ -22,3 +22,4 @@ IN JAVASCRIPT TUTTO CIO' CHE NON SONO VALORI PRIMITIVI SONO OGGETTI
 7-->INVECE DI CONCATENARE UNA STRINGA CON + --> ` stringa ${nomevariabile}`
     'ciao' + 'mondo '+ 'hello'
      si utilizza il ` ` (backtick  )  --> `ciao ${mondo} `
+8--> evitari spazi vuoti (buchi )  nell'array

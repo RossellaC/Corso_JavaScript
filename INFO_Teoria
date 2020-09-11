@@ -94,3 +94,56 @@ es -->let stringa1='questa <b> stringa  </b> <br> ha html </br>'
       per ovviare a questa bug basta moltiplicare ogni numero per dieci e poi dividere la somma diviso dieci
 4--> SOLO ALCUNI NUM DOPOP LA VIRGOLA
     --> num.toFixed(numDopoLaVirgola)
+
+####################### OGGETTI ############
+1--> parentesi {}
+2--> proprietà
+{ nome:'Rossella',
+  cognome:Rossi,
+  eta:30,
+  metodo dell'oggetto
+  presentarsi:fuction(){
+  document.getElementById('display').innerHTML=`Salve io sono ${this.nome} `;
+  NOTA: per prendere i valori dello stesso oggetto si utilizza This
+  }
+persona.presentarsi(); stampa la funzione
+
+####################### ARRAY ###################
+  1--> inserimento elemento
+      let array=[];
+      array.push(elemento)--> inserimento in coda
+      array.unshift(elemento)--> inserimento in testa
+
+      primo elemento la posizione di partenza
+      secondo 0 poichè non vogliamo eliminare nulla
+      array.splice(1,0,'valore 1', 'valore2');
+
+2--> eliminare elemento
+      array.pop(); --> eliminazione dell'ultimo elemento
+      array.shift(); --> eliminazione del primo elemento
+
+      primo elemento la posizione di partenza
+      secondo elemento quanti valori eliminare
+      array.splice(1,3);
+
+
+3--> azzerare array
+    array= [];  (assegnarli []cioè array vuoto)
+
+4--> ciclare Array
+    let nuovo=[1,2,3,4];
+    nuovo.forEach(function(elem,index)){
+    console.log(elem+ index)
+    }
+CONCATENAZIONE DI ARRAY
+1--> let arrayConcatenato=primo.concat(secondo);
+2--> ES6 primo.push(..due);
+
+ORDINARE L'ARRAY
+1--> ORDINA ALFABETICO  di stringhe     array.sort()  NO NUMERI POICHE' li converte in STRINGHE
+2-->ORDINA  CRESCENTE array di num      array.sort(function(a,b){ return a - b}));
+3-->ORDINA  DECRESCENTE array di num    array.sort(function(a,b){ return b - a}));
+
+ARRAY MULTIDIMENSIONALI
+let multi=[['a','b','c'], [1,2,3,4]];
+1-->multi[1][0]; return 1
