@@ -1,3 +1,8 @@
+ ######################## LINK TUTORIAL ##########################
+https://www.youtube.com/watch?v=sOI3lxvG8nw&list=PLYrQFCVhfFIvLARCdl9q5WyPnfRBX4rUT&index=2
+
+
+
 Javascript è noto per rendere le pagine dinamiche e farle interaggire con l'utente
 guidato dall'evento (event driven --> fare un qualcosa quando si fa altro)
 é un linguaggio interpretato,infatti basta un browser non serve un compilatore.
@@ -147,3 +152,29 @@ ORDINARE L'ARRAY
 ARRAY MULTIDIMENSIONALI
 let multi=[['a','b','c'], [1,2,3,4]];
 1-->multi[1][0]; return 1
+
+
+####################### ESPRESSIONI REGOLARI #############
+                          ricerca nei testi
+let pattern=/o/; cercare la o
+let alternativa =new RegExp('o');
+
+
+
+################################## FOR ######################
+
+1-->    for(let i=0; i<10; i++){}
+2-->    for.. in  (ciclare oggetti)
+        es -> for(let proprieta in obj){}
+3-->    forEach
+4-->    for.. of (ES6) cicla sia array che oggetti
+        es -->for(let elem of nomeArray); #####astrazione valore###
+            console.log(elem);
+
+        for.. of (ES6)  array
+        es -->for(let [index,valore] of nomeArray.entriest());####### astrazione valore e indice
+        console.log(elem+ index);
+
+        for.. of (ES6)  oggetto
+        es -->for(let [index,valore] of Object.entriest(nomeOggetto));####### astrazione valore e indice
+        console.log(elem+ index);

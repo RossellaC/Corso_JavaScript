@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="display" style="width:500px;height:300px;border:1px solid black">
+    </p>
+    <script>
+    let tabella='<table border ="1">';
+    for (let i = 0; i < 6; i++) {
+      tabella+='<tr>';
+      for (let y = 0; y < 5; y++) {
+          tabella +='<td>' + i +'</td>';
+      }
+      tabella+='<tr>';
+    }
+    tabella+='</table>';
+    document.getElementById('display').innerHTML=tabella;
+    </script>
+  </body>
+</html>
