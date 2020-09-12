@@ -237,3 +237,34 @@ let alternativa =new RegExp('o');
 6--> IIFE è una function espression invocabile immediatamente
     (function(){console.log('ciao')})(paramentri)
     questa funzione si auto invoca
+
+
+
+
+#############    PARAMETRI E CALLBACK #####################
+1--> ES6 introdotto il valore di default
+    function prima(x=2);
+    se il parametro non viene settato diversamente inserire di default 2
+
+2-->  ES6 operatore REST (...) (opposto del valore di default )
+        //utilizzato quando non sappiamo qunti parametri dobbiamo passare
+
+    function seconda(...);
+    function seconda(x,...y); // almeno uno ecc
+    NOTA ------IL SIMBOLO ... VIENE UTILIZZATO ANCHE PER IDENTIFICARE L'OPERATORE SPREAD
+                MA INSERITO NELLE FUNZIONI IDENTIFICA L'OPERATORE REST
+        -------- RAGGRUPPA DENTRO UN ARRAY IN QUESTO CASO DI NOME Y TUTTI I PARAMETRI INSERITI
+        --------L'OPERATORE REST DEVE ESSERE L'ULTIMO PARAMETRO INSERITO
+
+3-->CALLBACK sono funzioni passate come parametro utilizzata con il condice che
+              lavora in modo asincronno esempio dati inviati dal server
+    ES6 vengono usate meno
+    es-->function test(x){
+    return x*x;
+    }
+    //stampa il codice della FUNZIONE
+    console.log(test)
+    // stampo valore della FUNZIONE
+    console.log (test(parametri))
+
+    

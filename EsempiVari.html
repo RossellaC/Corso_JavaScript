@@ -20,6 +20,17 @@
         testo= testo.replace('o','A');
 }
 
+// esempio di utilizzo della callBack
+function test(x){
+  return x*x;
+}
+// il parametro callback è solo identificativo, posso inserire qualsiasi nome
+function principale(x, callback){
+  console.log('valore di x:' ,x );
+  console.log(callback(50));
+  console.log(callback);  // stampa il codice
+}
+principale(5,test);
       document.getElementById('display').innerHTML=testo;
     </script>
   </body>
