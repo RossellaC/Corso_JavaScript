@@ -113,6 +113,8 @@ es -->let stringa1='questa <b> stringa  </b> <br> ha html </br>'
   }
 persona.presentarsi(); stampa la funzione
 
+
+
 ####################### ARRAY ###################
   1--> inserimento elemento
       let array=[];
@@ -266,5 +268,3 @@ let alternativa =new RegExp('o');
     console.log(test)
     // stampo valore della FUNZIONE
     console.log (test(parametri))
-
-    

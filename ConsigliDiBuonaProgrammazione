@@ -23,3 +23,6 @@ IN JAVASCRIPT TUTTO CIO' CHE NON SONO VALORI PRIMITIVI SONO OGGETTI
     'ciao' + 'mondo '+ 'hello'
      si utilizza il ` ` (backtick  )  --> `ciao ${mondo} `
 8--> evitari spazi vuoti (buchi )  nell'array
+
+9--> QUNDO SI CREA UN OGGETTO ATTRAVERSO UNA FUNZIONE  (vedi file Approfondimento_oggetti)
+    si scrive il nome della funzione con la prima lettera maiuscola in modo appunto da indentificarla da una normale FUNZIONE

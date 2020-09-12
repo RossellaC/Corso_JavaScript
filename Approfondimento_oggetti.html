@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // oggetto letterale
+      let panda={
+        marca:'Fiat',
+        colore:'rossa',
+        descrizione:function(){
+          console.log(this.marca+ ' '+ this.colore);
+        }
+      };
+      panda.descrizione();
+      // aggiungere un nuovo attributo
+      panda.ruote=4;
+      console.log(panda.ruote);
+
+      //  se devo creare un oggetto per ogni tipo di auto non  va affatto bene
+
+    //  si utilizza il costruttore creando l'ggetto padre utilizzando una funzione
+
+    function Auto(marca, colore){
+      this.marca=marca;
+      this.colore=colore;
+      this.descrizione=function (){
+        console.log(this.marca+ ' ' + this.colore);
+      }
+    }
+    // costruttore
+    let panda= new Auto('Fiat', 'rosso');
+    console.log(panda.marca);
+
+
+    // vedere se l'oggetto panda deriva deriva dal costruttore auto
+    //  auto prototipo dell'oggetto panda
+    console.log(panda instanceof Auto ); // retunr true
+
+    //  aggiungere prorpietà al costruttore  attraverso la parola prototype
+    Auto.prototype.chilometraggio=100;
+  // NOTA --> NEL MOMENTO CHE SI AGGIUNGE UNA PROPRIETà TUTTI GLI OGGETTI CHE DISCENDANO DA ESSO ASSUMONO QUESTA PROPRIETà
+
+    </script>
+  </body>
+</html>
