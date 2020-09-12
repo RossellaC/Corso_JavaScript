@@ -178,3 +178,62 @@ let alternativa =new RegExp('o');
         for.. of (ES6)  oggetto
         es -->for(let [index,valore] of Object.entriest(nomeOggetto));####### astrazione valore e indice
         console.log(elem+ index);
+
+
+#################### try Catch  finally throw ##############
+1--> codice che non si sa se può andare in errore oppure no
+     valore  esempio scritto dall'utente  o valori che arrivano dal server
+2--> try {
+       codice da eseguire
+        }
+        catch(err){ // err tipo di errore da analizzare
+        tipo di errore
+        }
+        codice da eseguire successivamente
+        CON QUESTO COSTRUTTO JAVASCRIPT NON VA IN ERRORE MA SALTA QUEL TIPO DI ERRORE E CONTINUA CON  L'OPERAZIONE
+
+3-->       variante   con finally
+
+            try {
+            se tutto va bene esegue questo codice
+                } catch (e) {
+              altrimenti questo
+                  } finally {
+  codice che viene eseguito sia se tutto va bene sia se tutto va male
+                }
+
+4--> per creare un'errore personalizzato poichè con catch javascript lo genera da SOLO
+      si utilizza throw
+      try{
+      if ..
+        else{
+        throw 'errore da specificare'
+        }
+        catch (err){
+        codice in più va leggere quello inserto in throw
+        }
+      }
+############################ TIPI DI FUNZIONE ################
+1 --> function nomeFunzione(parametri){}
+      nomeFunzione(parametri);
+
+2-->  attraverso l'espressioni
+      let variabile =fuction(parametri){}
+      variabile(parametri);
+
+3--> ES6 Arrow non c'è un nome e si usano con i callBack funzione A usata come argomento da una funzione B
+    (parametri)={}
+
+4--> metodo (proprieta dell'oggetto)
+    let oggetto ={
+    prop:fuction(){} // inutile dare un nome in quanto la identifica l'oggetto
+    }
+    oggetto.prop():
+
+5--> costructor (quando  vado a creare una funzione utilizzando oggetto Fuction)
+    // METODO POCO UTILIZZATO
+    let esempio =new Fuction(console.log('ciao'));
+
+6--> IIFE è una function espression invocabile immediatamente
+    (function(){console.log('ciao')})(paramentri)
+    questa funzione si auto invoca
