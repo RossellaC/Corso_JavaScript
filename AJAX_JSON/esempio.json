@@ -1,0 +1,13 @@
+{
+
+    "testo": {
+        "titolo": "Imparare ad usare JSON",
+        "par": "Bla bla bla jdfgjdfgjdfhgdfhghdfjhgjdfhgjkdfh  dfnjdfhgj",
+        "footer": "Questo e' il footer"
+    },
+    "utenti": [
+        "Marco",
+        " Simone",
+        " Stefano"
+    ]
+}

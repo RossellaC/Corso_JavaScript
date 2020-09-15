@@ -1,0 +1,5 @@
+immagazzina informazioni in un formato simile ad oggetti javascript
+non può contenere funzioni
+
+differenza fra un oggetto javascript e uno json e che le proprietà in json
+vanno rinchiuse tra virgolette doppie, l'ultima proprietà non deve contenere la virgola

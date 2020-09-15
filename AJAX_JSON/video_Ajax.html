@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  <body>
+    <h1>Titolo AJax</h1>
+    <button id="btn" onclick="caricaFile()">Cliccami</button>
+    <p id="display">PrimoParagrafo</p>
+    <script>
+      function caricaFile(){
+        /*Per inviare una richiesta HTTP, crea  un oggetto XMLHttpRequest,
+        apri un URL, ed invia la richiesta. Dopo che la transazione è completata,
+         l'oggetto conterrà informazioni utili come il testo di risposta e lo stato HTTP.
+        */
+        // serve per creare connessioni ajax e ha dei metodi
+        const xhttp=new XMLHttpRequest();
+        //true per effettuare una connessione asincrona
+        xhttp.open('Get','testo.txt',true);
+        //manda la richiesta al server
+        xhttp.send();
+        //importante
+        xhttp.onreadystatechange =function(){
+          // readyState capire se la richiesta è stata mandata al server
+          //  valori da 0 a 4
+          /*
+          0=richiesta non è stata inizializzata
+          1=connessione con server abilitata
+          2=il server ha ricevuto al richiesta
+          3=il server sta processando la richiesta
+          4=il server ha finito di processare la richiesta e ha mandato la risposta
+          */
+
+          //quindi quando è 4   vuol dire che ha risposto e risponde con il codice
+          // se il codice è 200 vuol dire che ha trovato la mia richiesta
+          if(this.readyState === 4 && this.status ===200){
+            //va a visualizzare il testo del file passato precedentemente
+              document.getElementById('display').innerHTML=this.respondeText;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

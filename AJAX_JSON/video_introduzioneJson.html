@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<!--onload serve  in modo che quando la pag è stata caricata invoca la funzione
+caricaFile()-->
+    <body onload="caricaFile()">
+
+        <h1 id="titolo">Titolo H1</h1>
+        <div>
+            <div id="numUtenti"></div>
+            <div id="nomeUtenti"></div>
+        </div>
+        <p id="display">Primo paragrafo</p>
+        <footer id="footer"></footer>
+
+        <script>
+
+        // JSON: JavaScript Object Notation
+
+        function caricaFile() {
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open('GET', 'esempio.json', true);
+            xhttp.send();
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                  // JSON.parse(this.responseText coverte l'oggetto json in javascript
+                  // richiesta json dal serverJSON.parse
+                     console.log(JSON.parse(this.responseText));
+                    //convertiJson(this.responseText);
+
+
+                }
+            }
+        }
+// inserisce i dati passati nei tag html con nome citato sotto
+        function convertiJson(dati) {
+            const data = JSON.parse(dati);
+            document.getElementById('titolo').innerHTML = data.testo.titolo;
+            document.getElementById('display').innerHTML = data.testo.par;
+            document.getElementById('footer').innerHTML = data.testo.footer;
+
+            document.getElementById('numUtenti').innerHTML = data.utenti.length;
+            document.getElementById('nomeUtenti').innerHTML = data.utenti;
+        }
+        // la funzione caricaFile() stampa il codice dell'oggetto JSON
+         //caricaFile()
+
+        //invio oggetto json al server JSON.stringify
+
+        // const obj = {
+        //     prop1: "stringa",
+        //     prop2: 200,
+        //     prop3: "stringa2",
+        //     prop4: 2000
+        // };
+
+        //il num 4 come parametro rappresenta il numero di spazi d'indentazione
+        // console.log(JSON.stringify(obj, false, 4));
+
+        </script>
+
+    </body>
+</html>
