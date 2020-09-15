@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      class Veicolo{
+        costructor(ruote,motore){
+          this.ruote=ruote;
+          this.motore=motore;
+        }
+        descrizioneVeicolo(){
+          // this.motore boolean
+          return ` questo è un veicolo ${this.motore ? ' a motore' : 'a pedali'} ed
+        ha  ${this.ruote} ruote `;
+        }
+      }
+      const veicolo1=new Veicolo(4,true);
+      console.log(veicolo1.descrizioneVeicolo());
+
+      //  classe che eredita le proprietà della classe padre
+      class Auto extends Veicolo{
+        costructor(ruote,motore,marca,colore){
+          super(ruote,motore);
+          this.marca=marca;
+          this.colore=colore;
+
+        }
+        descriscioneAuto(){
+          console.log(`${super.descrizioneVeicolo()}, in particolare è un auto
+          ${this.marca} di colore ${this.colore}`);
+        }
+      }
+      const polo= Auto(3.true,'w','blue');
+      console.log(polo.marca);
+      console.log(polo.ruote);
+      polo.descriscioneAuto();
+      console.log(polo.descrizioneVeicolo());
+    </script>
+  </body>
+</html>

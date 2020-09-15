@@ -268,3 +268,8 @@ let alternativa =new RegExp('o');
     console.log(test)
     // stampo valore della FUNZIONE
     console.log (test(parametri))
+
+######################## CLASSI ###########
+diversi da quelli di java e introdotte in ECMAScript6 e il costruttore si fa in
+modo diverso da quello fatto per gli oggetti
+1--> usare la sintassi degli oggetti o crare le classi si ottiene lo stesso risultato

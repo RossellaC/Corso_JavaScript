@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="display"></p>
+<script>
+//stessa cosa che creare oggetti ma con sintassi diversa
+//ECMAScript6
+  class Auto{
+    costructor (marca,colore){
+      this.marca=marca;
+      this.colore=colore;
+    }
+    // metodo fuori il costruttore
+    descrizione(){
+      console.log(this.marca+' '+this.colore);
+    }
+    let panda= new Auto('Fiat', 'rosso');
+    console.log(panda.marca);
+  }
+</script>
+  </body>
+</html>
