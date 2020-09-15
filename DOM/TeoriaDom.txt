@@ -1,0 +1,85 @@
+DOM (Document Object Model) e perchè è così importante. Il DOM è uno standard
+ del consorzio W3C che ne indica le caratteristiche essenziali.
+Il DOM è costituito da tutti gli elementi (o nodi) di una pagina web.
+Ogni elemento è sotto forma di oggetto, e può essere visto come
+un albero rovesciato (in inglese "tree"), la sua radice è l'elemento <html>
+e poi comincia a ramificarsi con gli elementi <head> e <body> e via così.
+Ogni nodo può avere proprietà e metodi come ogni oggetto di JavaScript e
+può rispondere anche a determinati eventi.
+In questo video vedremo in particolare come sono composti gli elementi del
+DOM e poi parleremo delle loro relazioni di parentela: padri, figli e fratelli.
+Infatti, ogni nodo del DOM ha un genitore (parent), e può avere figli (child)
+o fratelli (sibling).
+
+quando un browser apre questo file html automaticamente crea un oggetto un
+oggetto con attributi e metodi e questo oggetto viene chiamato DOM
+praticamente tutto il file è l'oggetto e all'interno di questo oggetto ci sono
+tutti i nodi che ogni nodo un elemento della mia pagina come il nodo title il
+nodo ed il testo all'interno dei tag il nodo body il nodo h1 ogni nodo è
+anche inteso come oggetto e quindi anche anch'esso proprietà e metodi o head
+e l'oggetto body queste due figli si chiamano si dicono fratelli quindi i due
+figli hanno un genitore e possono avere a loro volta altri figli
+nel caso in questo caso è il mio figlio l'elemento ed altri due figli è
+l'elemento title ha un altro figlio che il testo contenuto all'interno dei tag
+title il body come in questo caso ha un'immagine e l'immagine a può avere un
+attributo o un paragrafo e al suo interno c'è del testo se noi andiamo a
+vedere il nostro il nostro file abbiamo detto che l'oggetto document che e' il
+padre di tutti e non altri niente del di sopra di esso ha un figlio
+che è l'oggetto html che a sua volta ha due figli head e body che tra di loro sono
+fratelli e l'oggetto head ha un figlio che è il tag title che ha a sua volta un
+altro nodo all'interno che è il testo l'oggetto body ha due figli ha tre figli
+a il tag h1 che a sua volta a un altro nodo al suo interno il testo poi c'è il
+nodo paragrafo con un attributo per esempio è anche un del testo e poi per
+esempio anche script è questo qui è un altro è un altro nodo e tra di loro
+questi nodi sono fratelli e praticamente tutti gli elementi della pagina web
+hanno un genitore possono avere dei figli e possono avere dei fratelli
+l'unico elemento che non ha padre è appunto l'elemento document perché è
+all'apice di tutta la catena cosa posso fare con javascript e in una
+pagina web tutto posso creare nuovielementi posso eliminare elementi
+esistenti posso cambiare lo stile quindi le regole sia css della pagina web posso
+cambiare gli attributi posso creare attributi posso creare delle animazioni
+e se adesso forse potete mettere a fuoco quando io scrivevo
+document.getelementbyid e usavo il display facendo questo io vado ad
+evocare l'oggetto documento quindi l'oggetto documento e va da usare un
+metodo di questo oggetto che getelementbyid questo metodo qui ritorna
+un elemento della pagina web in questo caso mi ritorna il paragrafo "p"
+il paragrafo "p" che può essere salvato dentro a una variabile mettiamo par
+eccolo qui se vi ricordate spesso io usavo questa proprietà qui che è inner
+html questa proprietà fa parte dell'oggetto paragrafo quindi di questo
+nodo qui e javascript permette di concatenare tutte queste cose quindi io
+posso anche fare così et voilà e adesso io vado a inserire il testo
+quindi il nodo testo del paragrafo "p"
+dentro alla mia variabile
+quindi se io adesso volessi andare a
+fare un printing della variabile vedrai
+il contenuto del nodo possono anche
+fare il contrario
+posso assegnare del nuovo contenuto
+nuovo testo all'elemento nodo del
+paragrafo
+quindi ricapitolando io quando vado a
+usare vado a interagire con la pagina
+web devo dichiarare il documento perché
+io voglio dichiarare questa pagina web
+posso usare un metodo ma ne vedremo
+altri nel prossimo video comunque vado a
+indicare all'oggetto documento voglio
+interagire con l'elemento che ha id
+display
+quindi questo metodo ritorno a questo
+elemento si concatena una proprietà
+questa proprietà dell'oggetto paragrafo
+a cui io posso o estrarre il testo del
+all'interno del tag o assegnare
+nuovo testo con questo è tutto ci
+sentiamo il prossimo video dove vi farò
+vedere altri metodi altre proprietà del
+dell'oggetto documento vi metterò in
+descrizione anche un a questo link qui
+che è fa parte della documentazione
+ufficiale dove qui trovate tutti i
+metodi tutte le proprietà dell'oggetto
+documento vi potete dare una letta non
+serve che le imparate tutte comunque ve
+li metto in descrizione con questo tutto
+ci sentiamo la prossima ciao
