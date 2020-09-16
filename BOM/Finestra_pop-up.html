@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+
+    <body onload="apri()">
+
+        <h1 id='titolo'>Titolo H1</h1>
+        <button id="display" onclick="apri()">Cliccami</button>
+
+        <script>
+//veine eseguito subito e la pag non è ancora caricato
+            // alert
+            // function alert1() {
+            //     alert('Questo e\' un alert \n altro testo');
+            // }
+
+// salvo il valore che viene messo da input  e lo stampo  in console
+            // prompt
+            // function apri() {
+            //     let valore = prompt('Inserire un valore');
+            //     console.log(typeof valore);
+            //     console.log(valore);
+            // }
+
+//in genere la risp è si o no
+            // confirm
+            function apri() {
+                let valore = confirm('Sei maggiorenne?');
+                console.log(typeof valore);
+                console.log(valore);
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -16,3 +16,15 @@ quindi in DOM è un proprietà del BOM
 ################# TIMER ############
 1-->ESEGUE UNA FUNZIONE DOPO UN DETERMINATO LASSO DI TEMPO --> setTimeout
 2-->PUNTO UNO A INTERVALLI REGOLARI  --> setInterval
+
+############## finestre pop-up ##########
+// si usano un pò meno perchè con il telefono non si vedono bene 
+3 tipi di finestre pop-up e appartengono anch'esse all'oggetto window.
+Alert,  questo tipo di finestra viene usato per visualizzare un semplice messaggio.
+        Il suo scopo è attirare l'attenzione dell'utente e non lascia lo schermo
+        finchè l'utente non chiude il messaggio
+Prompt, questo tipo di finestra viene usato per dare la possibilità all'utente di
+        inserire un valore che poi andremo a maneggiare all'interno del nostro codice
+Confirm,questo tipo di finestra permette all'utente di rispondere ad una domanda
+        (con un si o con un no) o confermare un'azione, ritorna sempre un
+        valore booleano "true/false"
