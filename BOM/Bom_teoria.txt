@@ -12,3 +12,7 @@ BOM =TUTTA LA PAGINA CONPRESA LA BARRA DEGLI INDIRIZZI
 VIENE RAPPRESENTATO DALL'OGGETTO windows
 windows ha anche la proprietà document che rappresenta la proprietà windows
 quindi in DOM è un proprietà del BOM
+
+################# TIMER ############
+1-->ESEGUE UNA FUNZIONE DOPO UN DETERMINATO LASSO DI TEMPO --> setTimeout
+2-->PUNTO UNO A INTERVALLI REGOLARI  --> setInterval

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+
+    <body>
+
+        <h1 id='titolo'>Titolo H1</h1>
+        <!-- clearTimeout funzione di javascrip che permette di abortire il parametro che
+      le viene passato.. infatti se clicchiamo sul button  non stampa la funziona saluta  -->
+        <button id="display" onclick="clearTimeout(timer),
+            clearInterval(intervallo)">Cliccami</button>
+        <br>
+        <br>
+
+        <div id='animazione' style="width:150px; height:150px; background:red; position:relative">DIV</div>
+
+        <script>
+
+            function saluta() {
+                console.log('Ciaooooooo');
+            }
+            // richiama la funzione dopo 3 secondi
+            let timer = setTimeout(saluta, 3000);
+            // a intervalli di tempo di 2 sec
+            //non serve passare una funzione ma passare una scriverla dirattamente all'interno
+            let intervallo = setInterval(() => {
+                console.log('Ciao mondo');
+            }, 2000);
+
+//caso in cui è utile utilizzare  ma non si utilizza poichè esiste css
+            let y = 0;
+            function muoviDiv() {
+                if (y < 500) {
+                  //spostamento verso destra del div
+                    document.getElementById('animazione').style.left = y + 'px';
+                    y += 5;
+                } else {
+                  //resetta l'intervallo clearInterval
+                    clearInterval(spostaDiv);
+                }
+            }
+            let spostaDiv = setInterval(muoviDiv, 50);
+
+        </script>
+
+    </body>
+</html>
