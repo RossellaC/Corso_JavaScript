@@ -16,3 +16,10 @@ con attributi. Quindi tutto il file è l'oggetto e ogni nodo è un elemento dell
 tipo il tag body e ognuno di essi è a sua volta un oggetto
 
 Tutti i nodi della pag possono avere dei fratelli e ogni fratello può avere dei figli
+
+######################### EVENTI ########################
+JAVASCRIPT è UN LINGUAGGIO EVENT DRIVEN (GUIDATO DAGLI EVENTI)
+L'EVENTO è QUALCOSA CHE SUCCEDE IN SEGUITO A UN'INTERAZIONE DELL'UTENTE
+1--> posso assegnare più di una funzione allo stesso evento
+       <div id='display' onmouseover='primaFunzioneDelprimoEvento()', 'secondaFunzioneDelprimoEvento()'
+            onmouseout="primafunzioneDelSecondoEvento">Io sono il div</div>

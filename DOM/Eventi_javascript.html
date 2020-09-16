@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+
+    <body>
+
+        <h1 id='titolo'>Titolo H1</h1>
+
+        <!-- onmouseover (passare sopra con il mouse)-->
+        <!-- onmouseout quando il mouse è uscito  -->
+
+        <!-- ######### PRIMO METODO  (sporcando il codice html) -->
+       <!-- <div id='display' onmouseover='mouseStaPassando()'
+            onmouseout="mousePassato()">Io sono il div</div> -->
+
+        <div id="display">Io sono il div</div>
+
+        <script>
+
+//qundo passo con il mouse sopra il titolo cambia il testo
+            function mouseStaPassando() {
+                document.getElementById('titolo').innerHTML = 'Il mouse sta passando';
+            }
+//quando lo sposso ritorna il testo Il mouse e\' passato'
+            function mousePassato() {
+                document.getElementById('titolo').innerHTML = 'Il mouse e\' passato';
+            }
+
+            // #################### SECONDO METODO (mantenendo pulito il codice html)##############
+            //POSSO INSERIRE SOLO UNA FUNZIONE PER VOLTA
+//
+            //inserimento dell'evento direttamente a document assegnadoli una funzione
+            // document.getElementById('display').onmouseover = mouseStaPassando;
+            // document.getElementById('display').onmouseout = mousePassato;
+
+            // ###################### TERZO METODO  (utilizzato per inserire + metodi insieme )#############
+            //addEventListener  permette di inserire più metodi
+            //mouseover si utilizza questo e non (on)mouseover
+            // document.getElementById('display').addEventListener('mouseover', mouseStaPassando);
+            // document.getElementById('display').addEventListener('mouseout', mousePassato);
+
+
+            //rimuovere un  EventListener attraverso  removeEventListener
+            // document.getElementById('display').removeEventListener('mouseout', mousePassato);
+
+        </script>
+
+    </body>
+</html>
