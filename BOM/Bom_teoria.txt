@@ -1,0 +1,14 @@
+BOM (Browser Object Model).
+A differenza del DOM, il BOM non è riconosciuto tra gli standard ufficiali, e per questo motivo,
+i suoi metodi e proprietà non sono trattati nella stessa maniera da tutti i browser.
+Comunque attraverso il BOM, un programmatore è in grado di manipolare importantissimi
+elementi come l'oggetto "window" e la sua proprietà: l'oggetto "screen".
+Usando questi oggetti possiamo determinare le dimensioni e la profondità di
+colore dello schermo del dispositivo dell'utente e le dimensioni della finestra del browser.
+
+DOM =PAGINA HTML SUDDIVISA IN oggetti
+BOM =TUTTA LA PAGINA CONPRESA LA BARRA DEGLI INDIRIZZI
+
+VIENE RAPPRESENTATO DALL'OGGETTO windows
+windows ha anche la proprietà document che rappresenta la proprietà windows
+quindi in DOM è un proprietà del BOM

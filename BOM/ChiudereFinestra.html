@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+<!--  evento onresize posso ridimensionare a mio piacimento la pag -->
+    <body onresize="resize()">
+
+        <h1 id='titolo'>Nuova finestra</h1>
+        <button onclick="chiudi()">Cliccami</button>
+
+        <script>
+//chiudere la finistra
+            function chiudi() {
+                window.close();
+            }
+//
+            function resize() {
+                document.getElementById('titolo').innerHTML = 'Nuove misure ' +
+                window.innerWidth + ' ' + window.innerHeight;
+            }
+
+
+        </script>
+
+    </body>
+</html>

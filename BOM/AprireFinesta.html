@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+
+    <body>
+
+        <h1 id='titolo'>Titolo H1</h1>
+        <div id="display" onmouseover="apri()">Io sono il div</div>
+
+        <script>
+
+        // Browser Object Model (BOM)
+        console.log(window);
+
+        // misure finestra del browser  dell'utente
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+
+// window.open permette di aprire un altro file passando le misure
+//'_blank' significa aprirlo in un altra finistra
+        function apri() {
+            window.open('ChiudereFinestra.html', '_blank', 'width=200,height=200');
+        }
+// miusre schermo dell'utente
+        console.log(screen.width);
+        console.log(screen.height);
+      // prodondità di colore dello schermo 
+        console.log(screen.colorDepth);
+
+        </script>
+
+    </body>

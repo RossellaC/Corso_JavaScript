@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titolo di pagina</title>
+    </head>
+
+    <body>
+
+        <h1 id='titolo'>Titolo H1</h1>
+        <div id="display" onmouseover="linka()">Io sono il div</div>
+
+        <script>
+
+//permette di vedere tutto il path della barra degli indiirzzi
+            console.log(location.href);
+//permette di vedere su quale server si trova la pag (path + domaninio)
+            console.log(location.hostname);
+//path senza dominio
+            console.log(location.pathname);
+
+//utile per aprire una nuova pag anche su internet o file sul proprio pc
+            function linka() {
+                 //location.assign('https://www.google.com');
+                location.assign('video7-2bis.html');
+            }
+//navigator non è affidabile
+//cookieEnabled se l'utente ha i cookies abilitati
+            console.log(navigator.cookieEnabled);
+//nome Browser
+            console.log(navigator.appName);
+//versione del browser
+            console.log(navigator.appVersion);
+//lingua 
+            console.log(navigator.language);
+
+        </script>
+
+    </body>
+</html>
