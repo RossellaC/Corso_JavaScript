@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Titolo Documento</title>
-    </head>
 
-    <body>
+<head>
+  <title>Titolo di pagina</title>
+</head>
 
-        <h1>Titolo H1</h1>
-        <p id="display">Primo paragrafo</p>
+<body>
 
-        <script>
+  <h1 id='titolo'>Titolo H1</h1>
+  <div class='test1'>
+    <p>Par 1</p>
+    <p>Par 2</p>
+  </div>
 
-        // HTML DOM (Document Object Model)
-        document.getElementById('display').innerHTML = 'nuovo testo';
+  <div class='test1'>
+    <p>Par 3</p>
+    <p>Par 4</p>
+  </div>
 
-        </script>
+  <p id="display" class='test1'>Paragrafo con ID</p>
 
-    </body>
+  <script>
+    /* INTERAGIRE CON GLI ELEMENTI DELLA PAGINA ATTRAVERSO L'OGGETTO DOCUMENT
+// interagisce direttamente con il tag <a></a>
+document.anchors
+document.body
+document.forms
+document.head
+document.images
+document.links
+document.scripts
+document.title
+*/
+
+    // document.title = 'Nuovo titolo';
+    // document.body.innerHTML = 'Nuovo contenuto body';
+    // console.log(document.head);
+
+    // per interagire con gli altri elementi della pag i quali non sono specificati
+    //nell'elenco citato sopra
+
+    // metodi piu' comuni
+    //  getElementsByTagName return i tag con nome div
+    let tagName = document.getElementsByTagName('div');
+    console.log(tagName);
+    //ritorna un collection (anche se sembra un array non lo è ma si può accedere
+    // agli elementi questo elemento si chiama array like ha la lunghezza e si può
+    //accedere ma non viene istanziato attraverso [] e quindi non posso accedere agli elementi dell'array
+
+    tagName[1].innerHTML = 'nuovo testo';
+    console.log(Array.isArray(tagName)); // return false
+    tagName = Array.from(tagName); //ES6  // con from lo trasformo in array
+    console.log(Array.isArray(tagName)); //return true;
+
+    // getElementsByClassName return un array like che hanno come nome class=test1
+    let className = document.getElementsByClassName('test1');
+    console.log(className);
+
+    //salvo l'elemento id='display' in una variabile element
+    let element = document.getElementById('display');
+    //inserisco un nuovo testo
+    element.innerHTML = 'Nuovo testo';
+    //cambiare lo stile e con il nome della proprietà come se fosse una regola css backgroundColor
+    element.style.backgroundColor = 'red';
+    //inserimento attributo 1-->nome attributo 2--> valore
+    element.setAttribute('dir', 'rtl');
+    //cambio il valore di className
+    element.className = 'red';
+    element.style.color = 'yellow';
+    // se ho due valore  font Size non per unirli devo utilizzare il Camel case cioè
+    //si inizia la parola con una lettera maiuscolo o minuscola in base a ciò che si
+    // trova prima. in questo caso fontSize(lettera MAIUSCOLA per iniziare la parola successiva)
+
+    element.style.fontSize = '200%';
+  </script>
+
+  <script>
+    //  per interagire  con la pag web devo dichiarare document si richiama un metodo
+    // in questo caso getElementById e passiamo l'id con cui vogliamo inetragire('display')
+    //e si concatena una proprietà es innerHTML asseganfole un valore
+    //  es--> document.getElementById('display').innerHTML='nuovoTesto ';
+    //  se non si vuole assegnare nessun valore richiamiamo la proprietà innerHTML senza assegnare nessun valore
+
+    let figlio = document.getElementById('display');
+
+    //inserisco il testo all'interno del mio div con nome display
+      figlio.innerHTML = '<p>Testo del par figlio</p>';
+
+/* QUESTO MODO  SOTTOSTANTE SOSTITUISCE QUESTO
+figlio.innerHTML = '<p>Testo del par figlio</p>'; qunado si vuole una performance  migliore
+
+*/
+//inserimento di un nuovo elemento <p_></p_>  quindi un nuovo paragrafo
+let p = document.createElement('p');
+    //inserimento testo in<p></p>
+    let testo = document.createTextNode('Testo del par p');
+
+    //congiungere il testo all'interno di <p></p>
+    p.appendChild(testo);
+    // e inserisce p all'interno del div
+    document.getElementById('display').appendChild(p);
+    let p1 = document.createElement('p');
+    let testo1 = document.createTextNode('Testo del par p1');
+    p1.appendChild(testo1);
+    document.getElementById('display').appendChild(p1);
+
+// return NodeList (arraylike)tutti gli elementi del dom in questo caso p
+    let nodeList = document.querySelectorAll('p');
+    console.log(nodeList);
+
+// quando un tag non  ha un id o un class per identificarlo
+//faccio .firstChild per il primo elemento
+    let child = document.getElementById('display').firstChild;
+
+    console.log(child.nodeName); //return il tag p poichè il primo elemento (.firstChild) del tag div è un p
+    console.log(child.firstChild.nodeValue); // return valore al suo inerno
+
+//ultimo
+    let lastChild = document.getElementById('display').lastChild;
+    console.log(lastChild.firstChild.nodeValue);
+  </script>
+
+</body>
+
 </html>
